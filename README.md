@@ -2,7 +2,7 @@
 
 Implementations of two sampling algorithms - **Langevin dynamics** (SDE) and **flow matching** (ODE) - with animated visualizations of sample transport in 2D.
 
-> I built this to wrap my head around the basics of flow matching and diffusion. The big idea: how do you move samples from a source distribution to a target distribution? Here, we conveniently *know* the target — which is great for understanding, but a total lie about real life. In practice, the target distribution is intractable and unknown. This is where all the complex math happens to derive a simple loss function.
+> I built this to wrap my head around the basics of flow matching and diffusion. The big idea: how do you move samples from a source distribution to a target distribution? Here, we conveniently *know* the target - which is great for understanding, but a total lie about real life. In practice, the target distribution is intractable and unknown. This is where all the complex math happens to derive a simple loss function.
 
 ## Project structure
 
