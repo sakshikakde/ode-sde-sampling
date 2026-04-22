@@ -81,7 +81,7 @@ Use the identity $\nabla p_t = p_t \nabla \log p_t$:
 $$\frac{1}{2}\nabla^2 p_t
   = \frac{1}{2}\nabla \cdot (\nabla p_t)
   = \frac{1}{2}\nabla \cdot (p_t\, \nabla \log p_t)
-  = \nabla \cdot \!\left(p_t \cdot \frac{1}{2}\nabla \log p_t\right)$$
+  = \nabla \cdot \.\left(p_t \cdot \frac{1}{2}\nabla \log p_t\right)$$
 
 Matching both sides:
 
