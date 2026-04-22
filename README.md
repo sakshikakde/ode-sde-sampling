@@ -19,7 +19,7 @@ sde_ode/
 
 | | ODE | SDE |
 |---|---|---|
-| **Animation** | <video src="outputs/flow_matching_animation.mp4" width="480" autoplay loop muted></video> | <video src="outputs/langevin_animation.mp4" width="480" autoplay loop muted></video> |
+| **Animation** | ![Flow Matching](outputs/flow_matching_animation.gif) | ![Langevin](outputs/langevin_animation.gif) |
 | **Trajectories** | <img src="outputs/flow_matching_animation_full_trajectories.png" width="480"> | <img src="outputs/langevin_animation_full_trajectories.png" width="480"> |
 | **Equation** | $dx_t = u_t(x)\,dt$ | $dx_t = u_t(x)\,dt + dW_t$ |
 | **Noise** | None - deterministic | $dW_t$ - Brownian motion |
