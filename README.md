@@ -116,3 +116,11 @@ The drift must equal **half the score** of the target distribution.
 $$\textbf{ODE (Flow Matching):} \quad u_t = x_1 - x_0$$
 
 $$\textbf{SDE (Langevin):} \quad u_t = \frac{1}{2}\nabla \log p_t$$
+
+---
+
+## References
+
+- [Diffusion Models (MIT 6.S184)](https://diffusion.csail.mit.edu/2026/index.html)
+- [Flow With What You Know (ICLR 2025 Blog)](https://iclr-blogposts.github.io/2025/blog/flow-with-what-you-know/?ref=danmackinlay.name)
+- Lots of chatting with Claude Code
