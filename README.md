@@ -108,7 +108,7 @@ The drift must equal **half the score** of the target distribution.
 > **ODE:** No unique equilibrium - so we *design* $u_t$ (e.g. straight-line OT path).
 > The continuity equation is satisfied by construction.
 >
-> **SDE:** The noise term $dW_t$ forces a unique stationary distribution $p^*$.
+> **SDE:** The noise term $dW_t$ forces a unique stationary distribution $p^\*$.
 > The only drift that balances it is $u_t = \frac{1}{2}\nabla \log p^*$ - the score.
 
 ---
