@@ -102,6 +102,17 @@ same amount of ink, just more evenly distributed.
 
 ![Continuity](assets/continuity.png)
 
+### The key difference
+
+The ODE has one way to change density - the current carries particles around.
+
+The SDE has two - the current **and** the pebbles spreading particles outward.
+
+At equilibrium in the SDE, these two forces exactly cancel each other:
+the current pushes particles toward the target distribution,
+the pebbles try to spread them out uniformly,
+and at the precise balance point - that is our $p^*$.
+
 | | ODE | SDE |
 |---|---|---|
 | **Equation** | $\dfrac{\partial p_t}{\partial t} = -\nabla \cdot (p_t\, u_t)$ | $\dfrac{\partial p_t}{\partial t} = -\nabla \cdot (p_t\, u_t) + \dfrac{1}{2}\nabla^2 p_t$ |
