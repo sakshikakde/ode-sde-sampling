@@ -60,7 +60,7 @@ The current is the only thing moving particles - smooth, directed, predictable.
 
 ---
 
-### SDE — the stream with rain
+### SDE - the stream with rain
 
 Same river, but now people are throwing pebbles into it.
 
