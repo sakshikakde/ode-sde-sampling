@@ -23,7 +23,7 @@ sde_ode/
 |---|---|---|
 | **Animation** | ![Flow Matching](outputs/flow_matching_animation.gif) | ![Langevin](outputs/langevin_animation.gif) |
 | **Trajectories** | <img src="outputs/flow_matching_animation_full_trajectories.png" width="480"> | <img src="outputs/langevin_animation_full_trajectories.png" width="480"> |
-| **Equation** | $dx_t = u_t(x)\,dt$ | $dx_t = u_t(x)\,dt + dW_t$ |
+| **Equation** | $dx_t = u_t(x)\ dt$ | $dx_t = u_t(x)\ dt + dW_t$ |
 | **Noise** | None - deterministic | $dW_t$ - Brownian motion |
 | **Path shape** | Smooth, straight | Curved, stochastic zigzag |
 
