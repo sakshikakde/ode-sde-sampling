@@ -42,6 +42,38 @@ The animations show the core problem: **steer samples from a source distribution
 ---
 
 ## Continuity Equation
+### The core idea
+
+At any point in a stream, probability is never created or destroyed.
+What flows in must equal what flows out.
+
+---
+
+### ODE - the ideal stream
+
+A perfectly calm river on a windless day.
+
+Pick any patch of water. Water arriving from upstream
+exactly equals water leaving downstream.
+The current is the only thing moving particles - smooth, directed, predictable.
+
+
+---
+
+### SDE — the stream with rain
+
+Same river, but now people are throwing pebbles into it.
+
+The pebbles don't add any water — they just knock existing particles
+sideways. A particle that was flowing smoothly downstream suddenly
+gets nudged left, right, forward, back at every step.
+
+Over time this jostling has one predictable effect: particles spread
+outward. Dense clusters thin out.
+Sparse regions fill in. Like a drop of ink slowly spreading through
+still water - same amount of ink, just more evenly distributed.
+
+![Continuity](assets/continuity.png)
 
 | | ODE | SDE |
 |---|---|---|
