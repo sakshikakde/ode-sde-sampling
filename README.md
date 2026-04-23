@@ -64,7 +64,7 @@ The current is the only thing moving particles - smooth, directed, predictable.
 
 Same river, but now people are throwing pebbles into it.
 
-The pebbles don't add any water — they just knock existing particles
+The pebbles don't add any water - they just knock existing particles
 sideways. A particle that was flowing smoothly downstream suddenly
 gets nudged left, right, forward, back at every step.
 
