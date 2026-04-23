@@ -47,31 +47,58 @@ The animations show the core problem: **steer samples from a source distribution
 At any point in a stream, probability is never created or destroyed.
 What flows in must equal what flows out.
 
+Think of probability density as a stream of water -
+the denser the water, the more likely a particle is there.
+
 ---
 
-### ODE - the ideal stream
+### ODE - the calm stream
+
+$$\frac{\partial p}{\partial t} = -\nabla \cdot (p \, u)$$
+
+| Term | Meaning |
+|---|---|
+| $\frac{\partial p}{\partial t}$ | How fast the density is changing at this point |
+| $\nabla \cdot (p \, u)$ | How much probability flux is spreading out - net outflow |
+| The minus sign | If more leaves than arrives, density drops |
 
 A perfectly calm river on a windless day.
-
 Pick any patch of water. Water arriving from upstream
 exactly equals water leaving downstream.
-The current is the only thing moving particles - smooth, directed, predictable.
+The current $u$ is the only thing moving particles -
+smooth, directed, predictable.
 
+> density changes **only** because particles are carried in or out by the current.
 
 ---
 
-### SDE — the stream with rain
+### SDE - the stream with pebbles
+
+$$\frac{\partial p}{\partial t} = -\nabla \cdot (p \, u) + \frac{1}{2}\nabla^2 p$$
+
+| Term | Meaning |
+|---|---|
+| $\frac{\partial p}{\partial t}$ | How fast the density is changing at this point |
+| $-\nabla \cdot (p \, u)$ | Same as ODE - change from directed current |
+| $+\frac{1}{2}\nabla^2 p$ | Extra change from random spreading (the pebbles) |
+| $\nabla^2 p$ | The Laplacian - positive where density is low, negative where high. Always smooths out peaks and fills valleys. |
 
 Same river, but now people are throwing pebbles into it.
 
-The pebbles don't add any water — they just knock existing particles
-sideways. A particle that was flowing smoothly downstream suddenly
-gets nudged left, right, forward, back at every step.
+The pebbles don't add any water - they just knock existing
+particles sideways. A particle flowing smoothly downstream
+suddenly gets nudged left, right, forward, back at every step.
 
-Over time this jostling has one predictable effect: particles spread
-outward. Dense clusters thin out.
-Sparse regions fill in. Like a drop of ink slowly spreading through
-still water - same amount of ink, just more evenly distributed.
+Over time this jostling has one predictable effect:
+particles spread outward from crowded regions into sparse ones.
+Dense clusters thin out. Sparse regions fill in.
+Like a drop of ink slowly spreading through still water -
+same amount of ink, just more evenly distributed.
+
+> density changes from **two** things: directed flow **and** random spreading.
+
+---
+
 
 ![Continuity](assets/continuity.png)
 
